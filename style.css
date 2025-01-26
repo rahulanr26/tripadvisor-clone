@@ -229,7 +229,7 @@ body{
 .destinations img{
     width: 100%;
     border-radius: 10px;
-    
+    transition: 0.2s;
 }
 
 .destinations div{
@@ -240,7 +240,7 @@ body{
     color: white; /* Text color */
     padding: 10px; /* Optional: Padding for spacing */
     text-shadow: 3px 3px 0 black;
-    transition: 0.2s;
+    
 }
 
 .destinations img:hover, .destinations_2 img:hover{
@@ -259,6 +259,7 @@ body{
 .destinations_2 img{
     width: 100%;
     border-radius: 10px;
+    transition: 0.2s;
 }
 
 .destinations_2__small{
@@ -349,6 +350,11 @@ body{
     cursor: pointer;
 }
 
+.footer__four,.footer__four__p{
+    display: none;
+}
+
+
 /* media queries */
 
 @media screen and (max-width:800px) {
@@ -367,6 +373,31 @@ body{
     .categories p, .categories p:hover{
         padding: 0;        
     }
+
+    .footer__two__s2__p{
+        padding-top: 5px;
+        flex-wrap: wrap;
+    }
+
+    .footer__three{
+        display: none;
+    }
+
+    .footer__four{
+        display: block;
+        text-align: right;
+        padding: 5px 20px;
+    }
+    .footer__four i{
+        padding-left: 20px;
+        font-size: medium;
+    }
+
+    .footer__four__p{
+        display: block;
+        padding: 10px 20px;
+    }
+
 }
 
 @media screen and (max-width:600px) {
@@ -382,7 +413,16 @@ body{
     .navbar{
         justify-content: end;
     }
-    .footer__three p{
+
+    .footer__one{
+        padding: 10px;
+    }
+
+    .footer__three p, .footer__three__s2 i{
         font-size: x-small;
+    }
+
+    .footer__three__s2 i{
+        font-size: medium;
     }
 }
