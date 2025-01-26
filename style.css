@@ -414,6 +414,11 @@ body{
         justify-content: end;
     }
 
+    .destination,.destination2{
+        margin: 20px;
+        padding: 0;
+    }
+
     .footer__one{
         padding: 10px;
     }
